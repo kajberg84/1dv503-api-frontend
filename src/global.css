@@ -20,7 +20,7 @@ html {
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 1.8rem;
-  background-color: var(--color-offwhite);
+  background-color: var(--color-darkgray);
   color: #f4a261;
 }
 
@@ -40,6 +40,6 @@ img {
   width: 100%;
 }
 
-button:hover{
+button:hover {
   cursor: pointer;
 }

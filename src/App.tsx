@@ -1,11 +1,11 @@
 import React from 'react'
 import './global.css'
-import Kossa from './Kossa'
+import Hogwarts from './Hogwarts'
 
 function App(): JSX.Element {
   return (
     <>
-      <Kossa />
+      <Hogwarts />
     </>
   )
 }
