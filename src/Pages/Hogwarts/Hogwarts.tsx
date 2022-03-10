@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
-import Table from '../../components/Table/Table'
+import Characters from '../../components/Characters/Characters'
+import Houses from '../../components/Houses/Houses'
 import ViewSwitchers from '../../components/ViewSwitchers/ViewSwitchers'
 import castleImg from './hogwarts-castle.png'
 import styles from './Hogwarts.module.css'
@@ -47,8 +48,8 @@ const Hogwarts = () => {
           )}
         </div>
         <div className={styles.dataContainer}>
-          {viewHouses && <Table data="houses" />}
-          {viewCharacters && <Table data="characters" />}
+          {viewHouses && <Houses />}
+          {viewCharacters && <Characters />}
         </div>
       </div>
       <img className={styles.bgImage} src={castleImg} alt="Hogwarts castle" />
