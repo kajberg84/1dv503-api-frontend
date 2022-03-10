@@ -5,7 +5,7 @@
   --color-darkgray: #282828;
   --darkgray: 40, 40, 40;
   --color-darkgray-o: rgba(var(--darkgray), 0.6);
-  --color-grayblue: #353746;
+  --color-grayblue: rgb(53, 55, 70);
   --color-orange: #f4a261;
 }
 
