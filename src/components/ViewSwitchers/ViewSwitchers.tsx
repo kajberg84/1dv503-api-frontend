@@ -10,10 +10,10 @@ function ViewSwitchers({ toggleViewHouses, toggleViewCharacters }: Props) {
   return (
     <div className={styles.container}>
       <button className={styles.button} type="button" onClick={() => toggleViewHouses()}>
-        Houses
+        🏠 Houses
       </button>
       <button className={styles.button} type="button" onClick={() => toggleViewCharacters()}>
-        Characters
+        🧙 Characters
       </button>
     </div>
   )
