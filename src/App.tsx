@@ -1,6 +1,6 @@
 import React from 'react'
 import './global.css'
-import Hogwarts from './Hogwarts'
+import Hogwarts from './Pages/Hogwarts/Hogwarts'
 
 function App(): JSX.Element {
   return (
