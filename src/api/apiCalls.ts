@@ -1,5 +1,10 @@
 import axios from 'axios'
 
+export async function getHouse(house: string) {
+  const result = await axios.get(`http://localhost:5000/houses/${house}`)
+  return result
+}
+
 export async function getHouseCharacters(house: string) {
   const result = await axios.get(`http://localhost:5000/houses/${house}/characters`)
   return result
