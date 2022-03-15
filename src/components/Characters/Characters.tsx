@@ -1,6 +1,12 @@
 import React, { useState } from 'react'
 import Select from 'react-select'
-import { getHouseData, getOthers, getStaff, getStudents, searchByName } from '../../api/apiCalls'
+import {
+  getHouseCharacters,
+  getOthers,
+  getStaff,
+  getStudents,
+  searchByName
+} from '../../api/apiCalls'
 import styles from './Characters.module.css'
 import CharacterTable from './CharacterTable'
 
@@ -55,7 +61,7 @@ function Characters() {
   }
 
   const handleGetHouseData = async (selectedOption: any) => {
-    const result = await getHouseData(selectedOption.value)
+    const result = await getHouseCharacters(selectedOption.value)
     setData(result.data)
   }
 

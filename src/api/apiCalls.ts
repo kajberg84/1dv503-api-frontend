@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-export async function getHouseData(house: string) {
+export async function getHouseCharacters(house: string) {
   const result = await axios.get(`http://localhost:5000/houses/${house}/characters`)
   return result
 }
