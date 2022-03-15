@@ -28,10 +28,8 @@ function CharacterTable({ characters }: Props) {
     {
       Header: 'Image',
       accessor: 'image',
-      maxWidth: 70,
-      minWidth: 70,
       // eslint-disable-next-line react/prop-types
-      Cell: ({ value }) => (value ? <img src={value} alt="Character portrait" width={60} /> : null)
+      Cell: ({ value }) => (value ? <img src={value} alt="Character portrait" width={70} /> : null)
     }
   ]
 
@@ -42,7 +40,7 @@ function CharacterTable({ characters }: Props) {
           name: character.name,
           gender: character.gender === 'female' ? '\u2640' : '\u2642',
           species: character.species,
-          wizard: character.wizard ? 'True' : 'False',
+          wizard: character.wizard ? 'true' : 'false',
           patronus: character.patronus,
           house: character.house,
           image: character.image
