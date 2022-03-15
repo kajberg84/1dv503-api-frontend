@@ -3,7 +3,7 @@ import React, { useMemo } from 'react'
 import { Column, useTable } from 'react-table'
 
 interface House {
-  house: string
+  name: string
   total_students: number
 }
 
@@ -13,7 +13,7 @@ type Props = {
 
 function TotalStudentsTable({ houses }: Props) {
   const cols: Column<House>[] = [
-    { Header: 'House', accessor: 'house' },
+    { Header: 'House', accessor: 'name' },
     { Header: 'Total students', accessor: 'total_students' }
   ]
 
@@ -21,7 +21,7 @@ function TotalStudentsTable({ houses }: Props) {
     () =>
       houses.map(house => {
         return {
-          house: house.house,
+          name: house.name,
           total_students: house.total_students
         }
       }),

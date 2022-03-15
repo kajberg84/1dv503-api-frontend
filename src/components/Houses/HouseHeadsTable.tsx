@@ -10,7 +10,7 @@ interface HouseHead {
   wizard: number | string
   patronus: string
   image: string
-  house: string
+  house_name: string
   founder: string
   ghost: string
   animal: string
@@ -45,7 +45,7 @@ function HouseHeadsTable({ houseHeads }: Props) {
     {
       Header: 'House',
       columns: [
-        { Header: 'House', accessor: 'house' },
+        { Header: 'Name', accessor: 'house_name' },
         { Header: 'Founder', accessor: 'founder' },
         { Header: 'Ghost', accessor: 'ghost' },
         { Header: 'Animal', accessor: 'animal' },
@@ -66,7 +66,7 @@ function HouseHeadsTable({ houseHeads }: Props) {
           wizard: houseHead.wizard ? 'true' : 'false',
           patronus: houseHead.patronus,
           image: houseHead.image,
-          house: houseHead.house,
+          house_name: houseHead.house_name,
           founder: houseHead.founder,
           ghost: houseHead.ghost,
           animal: houseHead.animal,

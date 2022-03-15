@@ -4,7 +4,7 @@ import React, { useMemo } from 'react'
 import { Column, useTable } from 'react-table'
 
 interface House {
-  house: string
+  name: string
   head: string
   founder: string
   ghost: string
@@ -21,7 +21,7 @@ type Props = {
 
 function HouseTable({ houses }: Props) {
   const cols: Column<House>[] = [
-    { Header: 'House', accessor: 'house' },
+    { Header: 'House', accessor: 'name' },
     { Header: 'Head', accessor: 'head' },
     { Header: 'Founder', accessor: 'founder' },
     { Header: 'Ghost', accessor: 'ghost' },
@@ -35,7 +35,7 @@ function HouseTable({ houses }: Props) {
     () =>
       houses.map(house => {
         return {
-          house: house.house,
+          name: house.name,
           head: house.head,
           founder: house.founder,
           ghost: house.ghost,
