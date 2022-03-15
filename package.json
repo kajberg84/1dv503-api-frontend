@@ -1,7 +1,8 @@
 {
-  "name": "1dv503-api-frontend",
-  "version": "0.1.0",
-  "private": true,
+  "name": "hogwarts-wiki",
+  "version": "1.0.0",
+  "authors": ["Kaj Berg <kb223aw@student.lnu.se>", "Rebecca Axelsson <ra223ai@student.lnu.se>"],
+  "repository": "https://github.com/kajberg84/1dv503-api-frontend",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
     "@fortawesome/free-solid-svg-icons": "^5.15.4",

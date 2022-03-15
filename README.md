@@ -1,15 +1,15 @@
-# A shell for react with ts using eslint prettier
+# ⚡ Hogwarts Wiki Frontend
 
-1. npm install
-2. index.html o lägg till rätt namn( Här ska jag fixa rätt meta taggar)
-3. Ta bort app.tsx kossa.tsx filer.
-4. Ändra name i pkg.json
-5. lägg till author / programmer
+## ❗ Before you run the frontend application
 
-# GLOBALS
+The application will only work if you run the backend REST API locally at port 5000 (see [readme](https://github.com/rebaxe/1dv503-rest-api/blob/main/README.md)).
 
-  --color-offwhite: #fff9f2;
-  --color-darkgray: #282828;
+## 🛠️ How to setup the project
 
-  font-family: 'Roboto', sans-serif;
-  imported from googlefonts
+Run `npm install` to install all dependencies.
+
+## 🚀 How to run the project locally
+
+- Run `npm run start`
+- The project will run on port 3000.
+- Open your browser and you will find the project running on http://localhost:3000
