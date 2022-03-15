@@ -49,3 +49,7 @@
 .button:active {
   top: 1px;
 }
+
+.tableContainer {
+  margin: 20px;
+}
